@@ -5,7 +5,6 @@ with open("input.txt") as inputFile:
     for l in lines:
         if (l != '\n'):
             calorieArray.append(int(l.strip()))
-            continue
         else:
             x = sum(calorieArray)
             elfArray.append(x)
