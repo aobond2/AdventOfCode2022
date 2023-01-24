@@ -1,6 +1,3 @@
-from socket import SO_ERROR
-
-
 elfArray = []
 calorieArray = []
 with open("input.txt") as inputFile:
