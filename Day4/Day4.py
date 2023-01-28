@@ -1,6 +1,4 @@
-stringArray = []
 def part_one():
-    global stringArray
     with open("input.txt") as inputFile:
         lines = inputFile.readlines()
     for l in lines:
@@ -10,7 +8,6 @@ def part_one():
         print (stringArray)
 
 def getFullRange(strArray):
-    global stringArray
     for s in range(len(strArray)):
         fullRange = []
         num = strArray[s].split("-")
