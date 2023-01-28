@@ -1,4 +1,5 @@
 scoreArray = []
+scoreFinal = 0
 winPoint = 6
 drawPoint = 3
 losePoint = 0
@@ -40,20 +41,29 @@ def doCalculation(arrayInput):
             draw(actionPoint)
 
 def win(ap):
+    global scoreFinal
     score = winPoint + ap
+    scoreFinal += score
+    print(score)
     scoreArray.append(score)
 
 def draw(ap):
+    global scoreFinal
     score = drawPoint + ap
+    print(score)
     scoreArray.append(score)
+    scoreFinal += score
 
 def lost(ap):
+    global scoreFinal
     score = losePoint + ap
     scoreArray.append(score)
+    scoreFinal += score
 
 def sumA():
     s = sum(scoreArray)
     print (s)
+    print (scoreFinal)
 
 def part_one():
     with open("input.txt") as inputFile:
