@@ -60,7 +60,6 @@ def part_one():
         lines = inputFile.readlines()
     for l in lines:
         ParseLine(l)
-
     sumA()
 
 def main() -> None:
